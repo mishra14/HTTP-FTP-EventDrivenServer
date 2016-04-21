@@ -1,24 +1,8 @@
-Full name:  Ankit Mishra
-SEAS login: mankit
+This repo is for a Java based HTTP/FTP server - 
 
-Which features did you implement? 
-  Entire Assignment
+A Web server that can be invoked from the command line, taking the following parameters, in this order:  
+1. Port to listen for connections on. Port 80 is the default HTTP port, but it is often blocked by firewalls, so the server should be able to run on any other port (e.g., 8080).  
+2. Root directory of the static web pages. For example, if this is set to the directory /var/www, a request for /mydir/index.html will return the file /var/www/mydir/index.html. 
 
-Did you complete any extra-credit tasks? If so, which ones?
-  Yes - Event driven server
-
-Any special instructions for building and running your solution?
-  None
-
-Did you personally write _all_ the code you are submitting
-(other than code from the course web page)?
-  [x] Yes
-  [ ] No
-
-Did you copy any code from the Internet, or from classmates?
-  [ ] Yes
-  [x] No
-
-Did you collaborate with anyone on this assignment?
-  [ ] Yes
-  [x] No
+This implementation is very similar to https://github.com/mishra14/Java-HTTP-FTP-server. 
+The main difference is that the server here uses non blocking IO for the incoming requests.
